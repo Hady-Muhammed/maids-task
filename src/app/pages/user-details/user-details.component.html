@@ -1,0 +1,16 @@
+<main class="relative">
+  <div class="flex justify-center items-center flex-col h-screen gap-4">
+    <img class="rounded-full w-[15rem]" [src]="user.avatar" alt="" />
+    <h1>
+      {{ user.first_name + " " + user.last_name }}
+    </h1>
+    <p>{{ user.email }}</p>
+  </div>
+
+  <button
+    (click)="goBack()"
+    class="absolute left-10 top-10 text-3xl border-b-4 border-b-[#6943ffdd]"
+  >
+    Back
+  </button>
+</main>
